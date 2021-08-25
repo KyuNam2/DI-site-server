@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/earlyaccess/notosanskr.css')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  link(href='public/stylesheets/main.css' rel='stylesheet')
+  link(href='public/images/01.main/title_logo.png' rel='shortcut icon' type='image/x-icon')
+  title Data Infuser
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block top-nav 
+      include ./includes/topnav
+    block content
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+      AOS.init();
+    
+    block footer 
+      include ./includes/footer
