@@ -1,0 +1,112 @@
+main
+  .container-fluid
+    .features-banner.p-4
+      .features-banner_title.p-5.text-center(data-aos='zoom-out' data-aos-duration='1400')
+        h1.banner_title.mb-4 From API Creation to Deployment
+        h1#font-red.banner_title Prompt! Convenient! Secure!
+    .features-contents.p-3
+      .features.container(data-aos='fade-left' data-aos-duration='1500')
+        .features_1.row.justify-content-md-evenly.align-items-center
+          .features_text.col-sm-4
+            img.features_icon(src='../public/images/02.features/icon1.png')
+            h3.mt-3
+              strong Instant API creation
+            p.mt-4
+              | When you use Data Infuser, you do not need to code.
+              br
+              | Just with GUI-based simple operations, 
+              br
+              | you can immediately create and manage your APIs.
+              br
+              br
+              | Select the desired data file and upload the file with
+              br
+              | a simple click.
+              br
+              | The file contents are automatically entered into the
+              br
+              | database.
+              br
+              | Create your own API through effortless operations.
+          .col-sm-5.text-center
+            img.feature_img.shadow.p-1(src='/images/02.features/Designer-crop.gif')
+      .features.container.mt-5(data-aos='fade-right' data-aos-duration='1500')
+        .features_2.row.justify-content-md-evenly.align-items-center
+          .col-sm-5.text-center
+            img.feature_img.shadow.p-1(src='/images/02.features/02.automated.png')
+          .features_text.col-sm-5
+            img.features_icon(src='/images/02.features/icon2.png')
+            h3.mt-3
+              strong Automated API docs
+            p.mt-4
+              | It is essential to read the API specifications before using the API.
+              | Data Infuser automatically furnishes API documentation by Swagger. Swagger&apos;s interactive UI provides a nice
+              | visualization of API operations, helping readers understand how the API works.
+              br
+              | Even without perfectly understanding the API system,
+              br
+              | you can build your API service after reading the API
+              br
+              | documentation.
+      .features.container.mt-5(data-aos='fade-left' data-aos-duration='1500')
+        .features_1.row.justify-content-md-evenly.align-items-center
+          .features_text.col-sm-5
+            img.features_icon(src='/images/02.features/icon3.png')
+            h3.mt-3
+              strong
+                | Collection of
+                br
+                |  Various Data Sources
+            p.mt-4
+              | When the user inserts files (e.g. xlsx, CSV) or DBMS 
+              br
+              | (e.g. Oracle, MySQL, MariaDB, CUBRID, Tibero) into the 
+              br
+              | file uploader. Data Infuser extracts data aptly according
+              | to each file format. If the content of the source data
+              | keeps changing, Data Infuser&apos;s scheduler automatically
+              | collects and regularly updates data.
+          .col-sm-5.text-center
+            img.feature_img_2(src='/images/02.features/03.datasources.png')
+      .features.container.mt-5(data-aos='fade-right' data-aos-duration='1500')
+        .features_2.row.justify-content-md-evenly.align-items-center
+          .col-sm-4.text-center
+            img.feature_img_2(src='/images/02.features/04.microservice.png')
+          .features_text.col-sm-5
+            img.features_icon(src='/images/02.features/icon4.png')
+            h3.mt-3
+              strong Microservice Architecture
+            p.mt-4
+              | Data infuser provides stable service in case of high traffic.
+              | The independence of each service enables consistent
+              | deployment and elastic server control.
+              | Each module within the service uses HTTP 2.0 based RPC to foster communication,
+              | which results in overall lighter and faster performance.
+      .features.container.mt-5(data-aos='fade-left' data-aos-duration='1500')
+        .features_1.row.justify-content-md-evenly.align-items-center
+          .features_text.col-sm-5
+            img.features_icon(src='/images/02.features/icon5.png')
+            h3.mt-3
+              strong Admin Console
+            p.mt-3
+              | The Manager system helps administrators monitor and oversee the current state of 
+              | generated API more efficiently through
+              | data visualization modules.
+              br
+              | With Manager, you can view the list of APIs,
+              | ongoing changes in traffic, or the amount of traffic per API through the
+              | dashboard.
+          .col-sm-5.text-center
+            img.feature_img.shadow.p-1(src='/images/02.features/05.admin.png')
+      .features.container.mt-5(data-aos='fade-right' data-aos-duration='1500' style='margin-bottom:50px;')
+        .features_2.row.justify-content-md-evenly.align-items-center
+          .col-sm-5.text-center
+            img.feature_img_2(src='/images/02.features/06.security.png')
+          .features_text.col-sm-4
+            img.features_icon(src='/images/02.features/icon1.png')
+            h3.mt-3
+              strong Rock-solid security
+            p.mt-3
+              | Data Infuser employs token-based authentication methods that are at low risk of hacking.
+              | Only verified users with validated API and authentication keys can use the deployed API.
+              | Encryption of personal information also makes user information more secure.

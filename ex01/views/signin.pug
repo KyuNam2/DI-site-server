@@ -1,0 +1,32 @@
+main.form-position
+  .form-bg.shadow
+    .form-top
+      .form-image
+        img.form-logo(src='/images/01.main/01.logo.png')
+      .form-title
+        p Welcome back!
+      .form-text
+        p
+          | Need to create a new organization?
+          a.no-line(href='signup.html')
+            strong Sign up
+          | here
+    button.w-100.btn.btn-outline-dark(type='button' style='margin-bottom:20px;')
+      img.google_icon_button(src='/images/google_logo.png')
+      |         Sign up with Google
+    .text_or.container
+      .row.align-items-center
+        hr.col(style='text-align: center;')
+        .col(style='text-align: center; color: grey; font-weight: bold;')
+          p or
+        hr.col(style='text-align: center;')
+    .form-contents
+      form
+        .mb-3
+          label.form-label(for='exampleDropdownFormEmail1') Email
+          input#cc-name.form-control(type='email' placeholder='you@email.com' required='')
+        .mb-3
+          label.form-label(for='password' style='float: left;') Password
+          a.no-line(href='reset password.html' style='float: right;') Forgot password?
+          input.form-control(type='password' placeholder='●●●●●' aria-label='password')
+        button#bottom_button.w-100.btn(type='submit' style='margin-top: 10px;') Sign in

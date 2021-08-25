@@ -1,0 +1,214 @@
+main
+  .container-fluid
+    .docs-banner
+      .docs_title.p-5.text-center(data-aos='zoom-out' data-aos-duration='1700')
+        h1#font-red.banner_title.mb-4 What is Data Infuser?
+        p.banner_text
+          | Data Infuser is an open-source (GNU GPL v3.0 applied) API generator 
+          br
+          | that converts raw data such as files (CSV, xlsx, etc.) and DBMS to REST APIs.
+          br
+          | This page describes the architecture of Data Infuser.
+          br
+          | You can see how Data Infuser works through its architecture.
+    .docs1-architecture.p-5.mt-5
+      .docs1-top.text-center.mb-5
+        h2
+          strong Data Infuser Architecture
+        img.mt-5.mb-5(style='width: 80%; min-width: 300px; max-width:1200px' src='../public/images/03.docs/architecture_capture.JPG')
+      .docs1-content
+        .desingerloader
+          .container.docs1-content_text.mb-4
+            .contents_1-title.col-sm-6
+              h4
+                strong API Generation
+            .row.mt-4
+              .text_left.col-sm-6
+                h4
+                  strong Designer
+                p
+                  | Designer is a service that manages raw data and creates APIs. Within the user
+                  | interface,
+                  | a user can define API
+                  | settings such as provision items, API call specifications, user parameters, and API
+                  | operation methods. If the user
+                  | requests API specification, the Designer forms an OAS 3.0-based API specification
+                  | from
+                  | metadata stored in the
+                  | metadata DB. The user can also set the loading cycle so that the Loader would
+                  | automatically update the API. When all
+                  | the steps are completed, the user can finally deploy API.
+              .text_right.col-sm-6
+                h4
+                  strong Loader
+                p
+                  | Loader is a service that extracts data from raw data, analyzes data, and stores data.
+                  | When the user uploads raw data
+                  | (files or DBMS), the Designer calls the Loader through the memory DB. Then, the
+                  | Loader extracts data from raw data
+                  | and analyzes it through the job queue. Next, the Loader defines schemas of the data,
+                  | creates schema tables, and
+                  | stores tables in the metadata DB. Furthermore, the Loader can update processed data
+                  | according to the loading cycle
+                  | set by the user.
+          .contents_2-img.text-center
+            img(src='../public/images/03.docs/designerloader.JPG' style='width: 100%; min-width: 300px; max-width:1200px')
+        .executor.mt-5
+          .container.docs1-content_text
+            .contents_2-title
+              h4
+                strong API Service Provider
+            .row.mt-4
+              .text_left.col-sm-6
+                h4
+                  strong Gateway
+                p
+                  | Gateway is a service that reads a user&apos;s API request.
+                  | Gateway contacts the Authorizer to determine if the user is a
+                  | verified user.
+                h4
+                  strong Authorizer
+                p
+                  | Authorizer is a service that verifies a user&apos;s validity by checking the
+                  | Authentication DB. If the user information
+                  | and the authentication keys match those in the DB, Authorizer determines the user as
+                  | a verified user. Authorizer
+                  | also creates statistical data from this request and stores it in the logs database.
+                  | Furthermore, Authorizer stores
+                  | generated or modified authentication key information in Authentication DB.
+              .text_right.col-sm-6
+                h4
+                  strong Executor
+                p
+                  | Executor is a service that executes the user&apos;s request and brings the necessary data.
+                  | It extracts metadata from the
+                  | user&apos;s request information and queries it in the Metadata DB. Subsequently, Executor
+                  | uses DB queries to query the
+                  | API in the Open Data DB. When it finds the necessary information, it delivers the
+                  | information to the Gateway.
+                  | Gateway returns the API to the user in a JSON/XML format.
+              p.mt-5 The three services mentioned above come together to form an API service
+          .contents_1-img.text-center
+            img(src='../public/images/03.docs/executor.JPG' style='width: 100%; min-width: 300px; max-width:1200px')
+        .manager.mt-5
+          .container.docs1-content_text
+            .contents_3-title
+              h4
+                strong API Service Management
+            .contents_3-text.mt-4
+              h4
+                strong Manager
+              p
+                | Manager is a GUI-based management service that allows the system admin to check the
+                | status of generated
+                | or deployed
+                | APIs. System Admin can administer deployed API&apos;s status and logs via Manager. Manager
+                | also offers
+                | statistical data
+                | through multidimensional analysis and statistical queries. As a result, the
+                | administrator can visually
+                | see the
+                | status of the API, traffic changes, and the number of traffic per API.
+          .contents_3-img.text-center
+            img(src='../public/images/03.docs/manager.JPG' style='width: 100%; min-width: 300px; max-width:1200px')
+        .others.mt-5
+          .container.docs1-content_text
+            .contents_4-title
+              h4
+                strong Others
+            .contents_3-text.mt-4
+              h4
+                strong Databases
+              p
+                | Data Infuser has main four databases. Open Data DB stores data that is extracted from raw
+                | data and processed by
+                | Loader. Authentication DB allows the admin to verify user information and authentication
+                | key information when the
+                | user attempts to leverage APIs. Metadata DB stores metadata of collected data. Metadata
+                | is used for API calls, API
+                | specification generation, etc. Statistical DB is separately established so that the user
+                | can check the utilization
+                | status of APIs and manage APIs efficiently.
+        .underlying.container.mt-5
+          .underlying-title.text-center
+            h2
+              strong Underlying Technology
+          .underlying-img.mt-5.text-center
+            img(src='/images/03.docs/underlying.JPG' style='width: 100%; min-width: 300px; max-width:1200px')
+          .row.mt-4.justify-content-md-evenly
+            .text_left.col-sm-6
+              p
+                | Data infuser is written in Go, Typescript, and Javascript, and the internal database uses
+                | MySQL and MariaDB. Rather
+                | than running all services on a single server, Data Infuser follows a microservice
+                | architecture in which services are
+                | distributed to multiple servers and each server has an independent function and
+                | communicates with other servers.
+            .text_right.col-sm-6
+              p
+                | The separated structure contributes to flexibility in managing rapid traffic changes and
+                | supports continuous
+                | development and deployment. In addition, Data Infuser uses gRPC, not the traditional
+                | REST API, to communicate
+                | between servers. gRPC enables Data Infuser&apos;s light and fast performance since it is
+                | lighter and faster than JSON,
+                | the file format of REST API.
+        .develop_environmet.mt-5.container
+          .develop_environmet-title.mb-3
+            h3 Develop Environmet
+          .please.row.justify-content-center.row-cols-2.row-cols-lg-1.g-lg-4.mt-3
+            .lag.col-sm-3.border.m-3
+              h4 Gateway
+              ul
+                li Golang 1.14.4
+                li
+                  | License 
+                  br
+                  | GNU GPL
+            .lag.col.border.m-3
+              h4 Loader
+              ul
+                li
+                  | nodeJS
+                  br
+                  | v12.16.3
+                li MySQL 8.0.x
+            .lag.col.border.m-3
+              h4
+                | Designer
+                br
+                | -Server
+              ul
+                li
+                  | nodeJS
+                  br
+                  | v12.16.3
+                li
+                  | MariaDB 
+                  br
+                  | v10.1
+            .lag.col.border.m-3
+              h4
+                | Desginer
+                br
+                | -Client
+              ul
+                li
+                  | nodeJS
+                  br
+                  | v12.16.3
+                li React v16
+            .lag.col.border.m-3
+              h4 Executor
+              ul
+                li Golang 1.13.4
+                li MySQL5.7
+                li GIN
+                li GORM
+            .lag.col.border.m-3
+              h4 Authorizer
+              ul
+                li Golang 1.14.4
+                li MySQL5.7
+                li Redis
+                li Docker

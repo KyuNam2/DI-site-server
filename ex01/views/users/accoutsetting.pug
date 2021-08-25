@@ -1,0 +1,29 @@
+main.form-position
+  .py-4
+  .form-bg.shadow
+    .form-top
+      .form-image
+        img.form-logo(src='/images/01.main/01.logo.png')
+      .form-title
+        p Account Details
+    br
+    .row
+      .col.mb-3
+        label.form-label(for='firstname') First name
+        input.form-control(type='text' readonly='' placeholder='Jin Ju' aria-label='First name')
+      .col.mb-3
+        label.form-label(for='lastname') Last name
+        input.form-control(type='text' readonly='' placeholder='LEE' aria-label='Last name')
+    .mb-3
+      label.form-label(for='exampleDropdownFormEmail1') Email address
+      input#exampleDropdownFormEmail1.form-control(type='email' value='banggi1124@gmail.com' readonly='')
+    div(container='')
+      .row.row-cols-1
+        .col
+          label.form-label(for='password' style='float: left;') Password
+          a.no-line(href='updatepw.html' style='float: right;') Edit
+          input.form-control(type='password' readonly='' placeholder='●●●●●' aria-label='password')
+          hr
+        .col
+          p(style='float: left; margin-top: 6px;') Delete Account
+          button.btn.btn-outline-danger(type='button' style='float: right;') Delete
