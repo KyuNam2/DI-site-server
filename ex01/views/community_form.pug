@@ -1,28 +1,31 @@
-main
-  .container.community_form
-    .main-title
-      h2 Community
-      hr
-    form
-      .form_title
-        .small-title
-          h4 Title
-        .small
-          p Be specific and imagine you&apos;re asking a question to another person
-        input#cc-name.form-control(type='text' placeholder='e.g. How can I install Data Infuser?' required='')
-      .form_body
-        .small-title
-          h4 Body
-        .small
-          p Include all the information someone would need to answer your question
-        textarea#floatingTextarea2.form-control(style='height: 300px')
-      .form_tags
-        .small-title
-          h4 Tags
-        .small
-          p
-            | Be specific and imagine you&apos;re asking a question to another person
-          p
-        input#cc-name.form-control(type='text' placeholder='tags')
-      button.btn.btn-primary.mt-5(type='submit' style='background-color:#b5223e; border: 0; outline: 0;') Post your question
-  hr
+extends layout
+
+block content
+  main
+    .container.community_form
+      .main-title
+        h2 Community
+        hr
+      form
+        .form_title
+          .small-title
+            h4 Title
+          .small
+            p Be specific and imagine you&apos;re asking a question to another person
+          input#cc-name.form-control(type='text' placeholder='e.g. How can I install Data Infuser?' required='')
+        .form_body
+          .small-title
+            h4 Body
+          .small
+            p Include all the information someone would need to answer your question
+          textarea#floatingTextarea2.form-control(style='height: 300px')
+        .form_tags
+          .small-title
+            h4 Tags
+          .small
+            p
+              | Be specific and imagine you&apos;re asking a question to another person
+            p
+          input#cc-name.form-control(type='text' placeholder='tags')
+        button.btn.btn-primary.mt-5(type='submit' style='background-color:#b5223e; border: 0; outline: 0;') Post your question
+    hr

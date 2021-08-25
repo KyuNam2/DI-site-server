@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .container(style='height: 80vh;')
+    h1.community-title Community
+    .search
+      .post-num
+        span#post-num 21,342,252
+        span questions
+
+      form(action='#')
+        .input-group.mb-3
+          input.form-control(type='text' placeholder='Search tags...' aria-label="Recipient's username" aria-describedby='basic-addon2')
+          .input-group-append
+            button.btn.btn-outline-secondary(type='button') Search
+    hr#header-hr
+    .main-questions
+
+      span#question-title How do I? README
+      p#question-content
+        | This is a place to ask about how you can do the things you want to do in Data Infuser.
+        | Data Infuser is really powerful, and there&rsquo;s a lot you can do! So ask away,
+        | and help other people figure out how to build the apps they want by chiming in.
+        | A few guidelines: The more detail the better &ndash; give the commu &mldr;
+      hr
+    .question
+      a(href='/community_form')
+        button.go-question(type='button') Ask Question
+    #paging
+  hr#footer-hr

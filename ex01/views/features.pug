@@ -1,4 +1,7 @@
-main
+extends layout
+
+block content
+  main
   .features_home
     .features-banner.p-4
       .features-banner_title.p-5.text-center(data-aos='zoom-out' data-aos-duration='1400')
@@ -8,7 +11,7 @@ main
       .features.container(data-aos='fade-left' data-aos-duration='1500')
         .features_1.row.justify-content-md-evenly.align-items-center
           .features_text.col-sm-4
-            img.features_icon(src='../public/images/02.features/icon1.png')
+            img.features_icon(src='/images/02.features/icon1.png')
             h3.mt-3
               strong Instant API creation
             p.mt-4

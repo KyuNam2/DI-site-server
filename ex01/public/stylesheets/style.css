@@ -68,20 +68,93 @@ body{
   color : #2a0101;
 }
 
-a {
+/* a {
   color: #00B7FF;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
 
+/* sign */
+.sign-background-color{
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.form-position{
+  margin: auto;
+
+}
+
+
+.form-bg {
+  width: 100%;
+  padding: 70px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: rgb(211, 211, 211);
+ 
+}
+
+.form-top{
+  margin-bottom: 25px;
+}
+
+.form-logo{
+  width: 150px; height: 40px; text-align: center;
+}
+
+.form-title{
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.form-text{
+  margin-top: -10px;
+}
+
+input::placeholder{
+font-size: 14px;
+ }
+
+.google_icon_button{
+  width:25px; height:25px; margin-right: 10px;
+}
+
+.signup-privacy{
+  text-align: center; margin-top: 14px; font-size: 13px;
+}
+
+.return{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.no-line{
+  text-decoration-line: none;
+}
+
+#bottom_button{
+  height: 40px;
+  background:#b5223e;
+  border:0; outline:0;
+  font-weight: 500;
+  color:white;
+}
+
+
+
+/* main */
 
 .main-main_text {
   font-size: 114%;
 }
 
-
-/* main */
 .main-main_top {
   padding-top: 150px;
   margin-top: -70px;
@@ -337,6 +410,332 @@ a {
 /* .contactus_text{
   
 } */
+
+
+/* community */
+/* 일단 제외 */
+
+
+/* community_form */
+.community_form-maintitle{
+  margin-top: 70px;
+}
+
+.community_form{
+  padding: 60px;
+  margin-top: 50px;
+}
+.main-title{
+  margin-bottom: 40px;
+}
+.small-title{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.small{
+  font-size: 1.0rem;
+}
+
+/* community-2 */
+.community-container {
+  margin-top: 56px;
+}
+
+.community-title {
+  border-bottom: 2px solid #b5223e;
+}
+
+.community-title>p {
+  font-family: NotoSans;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -2px;
+  color: #2a0101;
+
+}
+
+.community-question-title-layout {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd8e6;
+  padding: 18px 18px 3px 18px;
+}
+
+.community-question-title>p {
+  font-family: NotoSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #2a0101;
+
+}
+
+.community-question-title-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community-question-title-info>p {
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #9495a8;
+}
+
+
+
+.community-question-content {
+  border-bottom: solid 1px #ccd8e6;
+  padding: 19.5px 10px 30px 18px;
+}
+
+.community-question-content>p {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #2a0101;
+}
+
+.community-question-tag-layout .btn {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+  border-radius: 21px;
+  background-color: #9495a8;
+}
+
+
+
+.community-question-attachment {
+  border-bottom: solid 1px #ccd8e6;
+  padding-left: 18px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  margin-bottom: 30.5px;
+}
+
+.community-question-attachment>p {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #2a0101;
+}
+
+.community-question-attachment>span {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.18px;
+  color: #2a0101;
+}
+
+
+.community-question-post-sum {
+  border-bottom: solid 1px #ccd8e6;
+  padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+
+.community-question-post {
+  border-top: 2px solid #b5223e;
+  border-bottom: ;
+  background-color: #f7f7f8;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.community-question-post-sum-number {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #b5223e;
+}
+
+.community-question-post-sum-text {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #2a0101;
+}
+
+.community-question-post-form {
+  padding: 17px 20px 30px 20px;
+}
+
+.community-question-post-form-button .btn {
+  display: block;
+  float: right;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  border-radius: 25px;
+  background-color: #b5223e;
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.38px;
+  text-align: center;
+  color: #fff;
+}
+
+.community-question-comments {
+  margin-bottom: 24px;
+}
+
+.community-question-comment {
+  border-bottom: solid 1.2px #ccd8e6;
+  padding-left: 19px;
+  padding-top: 19px;
+  padding-bottom: 24px;
+}
+
+#author {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #31363b;
+}
+
+#uploaded-time {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #636e77;
+}
+
+.community-question-comment-content {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #31363b;
+}
+
+
+/* signin */
+.sign-background-color{
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-position{
+  margin: auto;
+
+}
+
+
+.form-bg {
+  width: 100%;
+  padding: 70px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: rgb(211, 211, 211);
+ 
+}
+
+.form-top{
+  margin-bottom: 25px;
+}
+
+.form-logo{
+  width: 150px; height: 40px; text-align: center;
+}
+
+.form-title{
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.form-text{
+  margin-top: -10px;
+}
+
+input::placeholder{
+font-size: 14px;
+ }
+
+.google_icon_button{
+  width:25px; height:25px; margin-right: 10px;
+}
+
+.signup-privacy{
+  text-align: center; margin-top: 14px; font-size: 13px;
+}
+
+.return{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.no-line{
+  text-decoration-line: none;
+}
+
+#bottom_button{
+  height: 40px;
+  background:#b5223e;
+  border:0; outline:0;
+  font-weight: 500;
+  color:white;
+}
+
 
 
 /* footer */

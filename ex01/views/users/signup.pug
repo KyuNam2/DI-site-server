@@ -1,41 +1,45 @@
-main.form-position
-  .form-bg.shadow
-    .form-top(style='margin-bottom: 35px;')
-      .form-image
-        img.form-logo(src='/images/01.main/01.logo.png')
-      .form-title
-        p Get started with Data Infuser
-      .form-text
-        p
-          | Are you already on Data Infuser?
-          a.no-line(href='signin.html')
-            strong Sign in
-    form
-      .row
-        .col.mb-3
-          label.form-label(for='firstname') First name
-          input.form-control(type='text' placeholder='First name' aria-label='First name' required='')
-        .col.mb-3
-          label.form-label(for='firstname') Last name
-          input.form-control(type='text' placeholder='Last name' aria-label='Last name' required='')
-      .mb-3
-        label.form-label(for='exampleDropdownFormEmail1') Email
-        input#exampleDropdownFormEmail1.form-control(type='email' placeholder='you@email.com' required='')
-      .mb-3
-        label.form-label(for='exampleDropdownFormPassword1') Password
-        input#exampleDropdownFormPassword1.form-control(type='password' placeholder='●●●●●' required='')
-      .mb-3
-        label.form-label(for='exampleDropdownFormPassword1') Password Confirmation
-        input#exampleDropdownFormPassword1.form-control(type='password' placeholder='●●●●●' required='')
-      button#bottom_button.w-100.btn(type='submit' style='margin-top: 10px;') Sign up
-    button.w-100.btn.btn-outline-dark(type='button' style='margin-top:6px')
-      img.google_icon_button(src='/images/google_logo.png')
-      | Sign up with Google
-    .signup-privacy
-      p
-        | By using Data Infuser you are agreeing to 
-        br
-        | our 
-        a.no-line(href='#') privacy policy
-        | and 
-        a.no-line(href='#') terms
+extends ../layout
+
+block content
+  .sign-background-color
+    main.form-position
+      .form-bg.shadow
+        .form-top(style='margin-bottom: 35px;')
+          .form-image
+            img.form-logo(src='/images/01.main/01.logo.png')
+          .form-title
+            p Get started with Data Infuser
+          .form-text
+            p
+              | Are you already on Data Infuser?
+              a.no-line(href='/signin')
+                strong Sign in
+        form
+          .row
+            .col.mb-3
+              label.form-label(for='firstname') First name
+              input.form-control(type='text' placeholder='First name' aria-label='First name' required='')
+            .col.mb-3
+              label.form-label(for='firstname') Last name
+              input.form-control(type='text' placeholder='Last name' aria-label='Last name' required='')
+          .mb-3
+            label.form-label(for='exampleDropdownFormEmail1') Email
+            input#exampleDropdownFormEmail1.form-control(type='email' placeholder='you@email.com' required='')
+          .mb-3
+            label.form-label(for='exampleDropdownFormPassword1') Password
+            input#exampleDropdownFormPassword1.form-control(type='password' placeholder='●●●●●' required='')
+          .mb-3
+            label.form-label(for='exampleDropdownFormPassword1') Password Confirmation
+            input#exampleDropdownFormPassword1.form-control(type='password' placeholder='●●●●●' required='')
+          button#bottom_button.w-100.btn(type='submit' style='margin-top: 10px;') Sign up
+        button.w-100.btn.btn-outline-dark(type='button' style='margin-top:6px')
+          img.google_icon_button(src='/images/google_logo.png')
+          |           Sign up with Google
+        .signup-privacy
+          p
+            | By using Data Infuser you are agreeing to 
+            br
+            | our 
+            a.no-line(href='#') privacy policy
+            |  and 
+            a.no-line(href='#') terms

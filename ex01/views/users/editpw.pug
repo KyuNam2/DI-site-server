@@ -1,20 +1,25 @@
-main.form-position
-  .form-bg.shadow
-    .form-top
-      .form-image
-        img.form-logo(src='/images/01.main/01.logo.png')
-      .form-title
-        p Edit your password
-      .form-text
-        p
-        | Please enter your new password.
-    .mb-3
-      label.form-label(for='exampleDropdownFormPassword2') Current Password
-      input#cc-name.form-control(type='password' placeholder='●●●●●' required='')
-    .mb-3
-      label.form-label(for='exampleDropdownFormPassword2') New Password
-      input#cc-name.form-control(type='password' placeholder='●●●●●' required='')
-    .mb-3
-      label.form-label(for='exampleDropdownFormPassword3') Password Confirmation
-      input#cc-name.form-control(type='password' placeholder='●●●●●' required='')
-    button#bottom_button.w-100.btn(type='submit' style='margin-top: 10px;') Update password
+extends ../layout
+
+block content
+  .sign-background-color
+    main.form-position
+      .form-bg.shadow
+        .form-top
+          .form-image
+            img.form-logo(src='/images/01.main/01.logo.png')
+          .form-title
+            p Reset your password
+          .form-text
+            p
+              | Enter your email to receive instructions on how to reset your password.
+        form
+          .mb-3
+            label.form-label(for='exampleDropdownFormEmail1') Email
+            input#cc-name.form-control(type='email' placeholder='you@email.com' required='')
+          button#bottom_button.w-100.btn.btn-primary(type='submit' style='margin-top: 10px;') Reset
+        .return
+          p
+            | or return to 
+            a.no-line(href='/signin')
+              strong Sign In
+
