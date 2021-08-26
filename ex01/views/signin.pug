@@ -1,4 +1,4 @@
-extends layout
+extends layout-sign 
 
 block content  
   .sign-background-color
@@ -6,7 +6,7 @@ block content
       .form-bg.shadow
         .form-top
           .form-image
-            img.form-logo(src='../../public/images/01.main/01.logo.png')
+            img.form-logo(src='/images/01.main/01.logo.png')
           .form-title
             p Welcome back!
           .form-text
@@ -16,7 +16,7 @@ block content
                 strong Sign up
               |  here
         button.w-100.btn.btn-outline-dark(type='button' style='margin-bottom:20px;')
-          img.google_icon_button(src='../../public/images/google_logo.png')
+          img.google_icon_button(src='/images/google_logo.png')
           |           Sign up with Google
         .text_or.container
           .row.align-items-center

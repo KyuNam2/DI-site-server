@@ -63,9 +63,9 @@
 
 
 
-body{
+body {
   font-family: 'Noto Sans KR', sans-serif;
-  color : #2a0101;
+  color: #2a0101;
 }
 
 /* a {
@@ -75,7 +75,7 @@ body{
 /*# sourceMappingURL=style.css.map */
 
 /* sign */
-.sign-background-color{
+.sign-background-color {
   height: 100vh;
   background-color: #f2f2f2;
   display: flex;
@@ -84,7 +84,7 @@ body{
 }
 
 
-.form-position{
+.form-position {
   margin: auto;
 
 }
@@ -98,53 +98,60 @@ body{
   border-width: 1px;
   border-radius: 10px;
   border-color: rgb(211, 211, 211);
- 
+
 }
 
-.form-top{
+.form-top {
   margin-bottom: 25px;
 }
 
-.form-logo{
-  width: 150px; height: 40px; text-align: center;
+.form-logo {
+  width: 150px;
+  height: 40px;
+  text-align: center;
 }
 
-.form-title{
+.form-title {
   margin-top: 20px;
   font-size: 24px;
 }
 
-.form-text{
+.form-text {
   margin-top: -10px;
 }
 
-input::placeholder{
-font-size: 14px;
- }
-
-.google_icon_button{
-  width:25px; height:25px; margin-right: 10px;
+input::placeholder {
+  font-size: 14px;
 }
 
-.signup-privacy{
-  text-align: center; margin-top: 14px; font-size: 13px;
+.google_icon_button {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
-.return{
+.signup-privacy {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.return {
   margin-top: 20px;
   text-align: center;
 }
 
-.no-line{
+.no-line {
   text-decoration-line: none;
 }
 
-#bottom_button{
+#bottom_button {
   height: 40px;
-  background:#b5223e;
-  border:0; outline:0;
+  background: #b5223e;
+  border: 0;
+  outline: 0;
   font-weight: 500;
-  color:white;
+  color: white;
 }
 
 
@@ -307,24 +314,24 @@ font-size: 14px;
 }
 
 /* features */
-.features-banner{
-  background: url(../images/03.banner/01.banner.png);
+.features-banner {
+  background: url(../images/04.banner/01.banner.png);
   background-size: cover;
 }
 
-.banner_title{
+.banner_title {
   font-weight: 600;
   text-shadow: 2px 2px 2px #bdbdbd;
 }
 
 /* banner_title 여기부분 호칭 바꿔야할 듯 */
 
-.features_icon{
+.features_icon {
   width: 50px;
   height: 50px;
 }
 
-.feature_img{
+.feature_img {
   background-color: #f5f6f9;
   border-radius: 10px;
   width: 100%;
@@ -332,35 +339,35 @@ font-size: 14px;
   max-width: 600px;
 }
 
-.feature_img_2{
+.feature_img_2 {
   width: 100%;
   min-width: 300px;
   max-width: 600px;
 
 }
 
-.features_1{
+.features_1 {
   margin-top: 200px;
 }
 
-.features_2{
+.features_2 {
   margin-top: 200px;
 
 }
 
 /* docs 공통부분 */
-.docs-banner{
+.docs-banner {
   background: url(../images/03.banner/01.banner.png);
   background-size: cover;
 }
 
-.banner_title{
+.banner_title {
   font-weight: 600;
 
 }
 
 /* docs-1  */
-.lag{
+.lag {
   padding-top: 20px;
   width: 150px;
   height: 200px;
@@ -368,7 +375,17 @@ font-size: 14px;
 }
 
 /* docs-2 */
-.manual{
+.docs-banner {
+  background: url(/images/04.banner/01.banner.png);
+  background-size: cover;
+}
+
+.banner_title {
+  font-weight: 600;
+
+}
+
+.manual {
   text-align: center;
   width: 60%;
   max-width: 900px;
@@ -376,12 +393,12 @@ font-size: 14px;
   margin: 0 auto;
   border-radius: 30px;
   padding: 80px;
-  
+
 }
 
-.download{
+.download {
   text-align: center;
-  border:0;
+  border: 0;
   border-radius: 15px;
   background-color: #b5223e;
   color: #fff;
@@ -389,15 +406,16 @@ font-size: 14px;
 }
 
 
+
 /* contact_us */
 
-.contactus{
-  background : url("/images/03.banner/03.contact_back.png");
+.contactus {
+  background: url("/images/04.banner/03.contact_back.png");
   background-size: cover;
   position: relative;
 }
 
-.contact-form_position{
+.contact-form_position {
   width: 50%;
   max-width: 800px;
   min-width: 290px;
@@ -414,38 +432,105 @@ font-size: 14px;
 
 /* community */
 /* 일단 제외 */
+.community-title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2A0101
+}
 
+.question {
+  display: inline-block;
+  width: 80vw;
+  padding-top: 4.065vh;
+}
+
+.search {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+
+.post-num {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#post-num {
+  color: #B5223E;
+}
+
+.go-question {
+  float: right;
+  background-color: #B5223E;
+  color: white;
+  font-family: NotoSans;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  padding: 8px 15px;
+}
+
+#main-title {
+  font-size: 18px;
+  color: #2A0101;
+  margin-top: 24px;
+}
+
+#paging {
+  text-align: center;
+}
+
+#header-hr {
+  color: #B5223E;
+  height: 1px;
+  border: solid 2px #B5223E;
+  margin-bottom: 24px;
+}
+
+#footer-hr {
+  width: 100%;
+}
 
 /* community_form */
-.community_form-maintitle{
+.community_form-maintitle {
   margin-top: 70px;
 }
 
-.community_form{
+.community_form {
   padding: 60px;
   margin-top: 50px;
 }
-.main-title{
+
+.main-title {
   margin-bottom: 40px;
 }
-.small-title{
+
+.small-title {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.small{
+
+.small {
   font-size: 1.0rem;
 }
 
 /* community-2 */
 .community-container {
   margin-top: 56px;
+  margin-bottom: 40px;
 }
 
-.community-title {
+.community-title-2 {
   border-bottom: 2px solid #b5223e;
 }
 
-.community-title>p {
+.community-title-2>p {
   font-family: NotoSans;
   font-size: 36px;
   font-weight: bold;
@@ -522,6 +607,7 @@ font-size: 14px;
   color: #fff;
   border-radius: 21px;
   background-color: #9495a8;
+  margin-right: 7px;
 }
 
 
@@ -664,7 +750,7 @@ font-size: 14px;
 
 
 /* signin */
-.sign-background-color{
+.sign-background-color {
   height: 100vh;
   background-color: #f2f2f2;
   display: flex;
@@ -672,8 +758,15 @@ font-size: 14px;
   align-items: center;
 }
 
+.signup-background-color{
+  height: 125vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.form-position{
+.form-position {
   margin: auto;
 
 }
@@ -687,53 +780,60 @@ font-size: 14px;
   border-width: 1px;
   border-radius: 10px;
   border-color: rgb(211, 211, 211);
- 
+
 }
 
-.form-top{
+.form-top {
   margin-bottom: 25px;
 }
 
-.form-logo{
-  width: 150px; height: 40px; text-align: center;
+.form-logo {
+  width: 150px;
+  height: 40px;
+  text-align: center;
 }
 
-.form-title{
+.form-title {
   margin-top: 20px;
   font-size: 24px;
 }
 
-.form-text{
+.form-text {
   margin-top: -10px;
 }
 
-input::placeholder{
-font-size: 14px;
- }
-
-.google_icon_button{
-  width:25px; height:25px; margin-right: 10px;
+input::placeholder {
+  font-size: 14px;
 }
 
-.signup-privacy{
-  text-align: center; margin-top: 14px; font-size: 13px;
+.google_icon_button {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
-.return{
+.signup-privacy {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.return {
   margin-top: 20px;
   text-align: center;
 }
 
-.no-line{
+.no-line {
   text-decoration-line: none;
 }
 
-#bottom_button{
+#bottom_button {
   height: 40px;
-  background:#b5223e;
-  border:0; outline:0;
+  background: #b5223e;
+  border: 0;
+  outline: 0;
   font-weight: 500;
-  color:white;
+  color: white;
 }
 
 

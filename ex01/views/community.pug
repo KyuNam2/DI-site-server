@@ -1,13 +1,12 @@
 extends layout
 
 block content
-  .container(style='height: 80vh;')
+  .container.p-5
     h1.community-title Community
-    .search
+    .container.search
       .post-num
         span#post-num 21,342,252
         span questions
-
       form(action='#')
         .input-group.mb-3
           input.form-control(type='text' placeholder='Search tags...' aria-label="Recipient's username" aria-describedby='basic-addon2')
@@ -15,8 +14,8 @@ block content
             button.btn.btn-outline-secondary(type='button') Search
     hr#header-hr
     .main-questions
-
-      span#question-title How do I? README
+      a(href='/community-2' style='text-decoration-line: none; color:#2a0101')
+        h4 How do I? README
       p#question-content
         | This is a place to ask about how you can do the things you want to do in Data Infuser.
         | Data Infuser is really powerful, and there&rsquo;s a lot you can do! So ask away,
@@ -27,4 +26,9 @@ block content
       a(href='/community_form')
         button.go-question(type='button') Ask Question
     #paging
-  hr#footer-hr
+
+  
+
+
+
+  
