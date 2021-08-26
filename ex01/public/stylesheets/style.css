@@ -1,10 +1,9 @@
 @media (max-width:993px) {
-  .getstarted-button {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: right;
+  .navbar_right{
+    float: right;
   }
 }
+
 
 @media (max-width:768px) {
   #contact_button {
@@ -432,6 +431,12 @@ input::placeholder {
 
 /* community */
 /* 일단 제외 */
+
+.community_box{
+  margin-bottom: 50px;
+  height: 60vh;
+}
+
 .community-title {
   margin-top: 50px;
   margin-bottom: 25px;
@@ -439,13 +444,11 @@ input::placeholder {
   font-weight: bold;
   color: #2A0101
 }
-
 .question {
   display: inline-block;
   width: 80vw;
   padding-top: 4.065vh;
 }
-
 .search {
   width: 80vw;
   display: flex;
@@ -454,16 +457,13 @@ input::placeholder {
   padding-top: 30px;
   justify-content: space-between;
 }
-
 .post-num {
   font-size: 24px;
   font-weight: bold;
 }
-
 #post-num {
   color: #B5223E;
 }
-
 .go-question {
   float: right;
   background-color: #B5223E;
@@ -475,24 +475,20 @@ input::placeholder {
   border-radius: 40px;
   padding: 8px 15px;
 }
-
 #main-title {
   font-size: 18px;
   color: #2A0101;
   margin-top: 24px;
 }
-
 #paging {
   text-align: center;
 }
-
 #header-hr {
   color: #B5223E;
   height: 1px;
   border: solid 2px #B5223E;
   margin-bottom: 24px;
 }
-
 #footer-hr {
   width: 100%;
 }
